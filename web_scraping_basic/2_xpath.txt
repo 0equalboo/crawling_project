@@ -1,0 +1,3 @@
+//*[@id="img"]
+/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[11]/ytd-watch-next-secondary-results-renderer/div[2]
+/ytd-compact-video-renderer[1]/div[1]/ytd-thumbnail/a/yt-img-shadow/img
