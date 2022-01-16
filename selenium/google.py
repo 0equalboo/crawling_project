@@ -6,9 +6,9 @@ driver = webdriver.Chrome()
 driver.get("https://www.google.co.kr/imghp?hl=ko&tab=ri&ogbl")
 
 elem = driver.find_element_by_name("q")
-elem.send_keys("딸기맛크로와") #크롤링 대상 (가져올 이미지) 선택
+elem.send_keys("랄로") #크롤링 대상 (가져올 이미지) 선택
 elem.send_keys(Keys.RETURN) #엔터키
-for i in range(0,int(input())):
+for i in range(0, 5):
     driver.find_elements_by_css_selector(".rg_i.Q4LuWd")[i+1].click() #i번째 이미지 클릭
     time.sleep(3) #사진 로딩 시간
     imageUrl = driver.find_element_by_css_selector(".n3VNCb").get_attribute("src") #이미지 주소 찾기
